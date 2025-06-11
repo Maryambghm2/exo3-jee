@@ -18,13 +18,20 @@
 </head>
 <body>
 <h1>Affichage des Personnages</h1>
-<% for (int i = 0; i < noms.size(); i++) {%>
-<table class="table table-bordered">>
-    <tr><%= noms.get(i) %>
+<table class="table table-dark">
+    <tr>
+        <th>Noms :</th>
+        <th>Prénom :</th>
+        <th>Ages :</th>
     </tr>
-    <tr><%= prenoms.get(i) %>
-    </tr>
-    <tr><%= ages.get(i) %>
+    <% for (int i = 0; i < noms.size(); i++) {%>
+    <tr>
+        <td><%= noms.get(i) %>
+        </td>
+        <td><%= prenoms.get(i) %>
+        </td>
+        <td><%= ages.get(i) %>
+        </td>
     </tr>
     <% } %>
 </table>
